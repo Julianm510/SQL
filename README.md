@@ -39,9 +39,9 @@ Actualmente, muchas personas desean viajar, pero se enfrentan a dificultades com
 | nombre     | varchar  | nombre del cliente             |
 | apellido   | varchar  | apellido del cliente           |
 | telefono   | int      | numero de telefono del cliente |
+| mail       | varchar  | mail del cliente               |
 | id_reserva | int      | numero de reserva del cliente  |
 | id_pago    | int      | numero de pago del cliente     |
-| id_cliente | Varchar  | Clave primaria                 |
 
 # Reservas
 
