@@ -35,77 +35,80 @@ Actualmente, muchas personas desean viajar, pero se enfrentan a dificultades com
 
 | Campo      | Tipo     | Descripción                    |
 | :--------- | :------- | :----------------------------- |
-| id         | int (PK) | numero de id del cliente       |
+| id         | int(PK) | numero de id del cliente       |
 | nombre     | varchar  | nombre del cliente             |
 | apellido   | varchar  | apellido del cliente           |
 | email      | varchar  | mail del cliente               |
 | dni        | varchar  | documento identidad del cliente               |
-| nacionalidad | int      | nacionalidad de reserva del cliente  |
-| fecha_registro   |timestamp default current_timestamp    | fecha de registro del cliente     |
+| fecha_registro   |timestamp default current_timestamp    | fecha de registro del cliente|
+| nacionalidad | int  | nacionalidad de reserva del cliente  |
+
 
 # Reservas
 
 | Campo      | Tipo    | Descripción                            |
 | :--------- | :------ | :------------------------------------- |
-| id_reserva | int(PK) | id de la reserva realizada             |
-| id_cliente | int(FK) | id del cliente que realiza una reserva |
-| id_aereo   | int(FK) | id de aereos reservados                |
-| id_destino | int(FK) | id del destino reservado               |
-| id_paquete | int(FK) | numero de reserva del paquete          |
-| id_hotel   | int(FK) | id de reserva del hotel                |
-| precio     | decimal | costo de la reserva                    |
+| id | int(PK) | id de la reserva realizada             |
+| cliente_id | int(FK) not null | id del cliente que realiza una reserva |
+| paquete_id  | datetime | id correspondiente al paquete reservado              |
+| fecha_reserva | int(FK) | id de reservacion           |
+| estado| varchar(20) | estado en el que se encuentra la reserva         |
+| num_personas   | int | numero de personas que incluye la reserva            |
+| monto_total    | decimal(10,2) | costo de la reserva                    |
 
-# Destinos
-
-| Campo        | Tipo    | Descripción                              |
-| :----------- | :------ | :--------------------------------------- |
-| id_destino   | int(PK) | id del destino                           |
-| pais         | varchar | pais donde se encuentra el destino       |
-| ciudad       | varchar | ciudad donde se encuentra el destino     |
-| continente   | varchar | continente donde se encuentra el destino |
-| zona_horaria | time    | zona horaria del destino                 |
 
 # Paquetes
 
 | Campo      | Tipo    | Descripción                 |
 | :--------- | :------ | :-------------------------- |
-| id_paquete | int(PK) | id del paquete seleccionado |
+| id | int(PK) | id del paquete seleccionado |
 | nombre |varchar(100) not null | nombre del paquete             |
-| descripcion  | text | descripcion del hotel                |
-| id_aereo   | int(FK) | id de los aereos            |
-| precio     | decimal | precio del paquete          |
+|descripcion | text | descripcion del paquete                |
+| destino   | varchar(100) | destino del paquete          |
+| precio     | decimal(10,2) not null| precio del paquete          |
+| fecha_inicio | date | fecha de inicio del paquete |
+| fecha_fin | date | fecha de finalizacion del paquete |
+| cupo_disponible | int | cupos disponiblers del paquete |
+| hotel_id | int(FK) | hotel que incluye el paquete seleccionado |
+| vuelo_id | int(FK) | vuelo que incluye el paquete seleccionado |
 
-# Pagos
+# Vuelos
 
-| Campo       | Tipo    | Descripción                                |
-| :---------- | :------ | :----------------------------------------- |
-| id_pago     | int(PK) | id del pago realizado por el cliente       |
-| id_reserva  | int(FK) | identifica que reserva se debe abonar      |
-| id_cliente  | int(FK) | identifica que cliente realizo el pago     |
-| metodo_pago | int(FK) | describe con que metodo se realizo el pago |
-| fecha_pago  | int(FK) | documenta en que fecha se realizo el pago  |
-| monto_pago  | decimal | documenta el monto que se abono            |
+| Campo         | Tipo    | Descripción                             |
+| :------------ | :------ | :-------------------------------------- |
+| id    | int(PK) auto_increment | id que indentifica la reserva de aereos |
+| aerolinea     | varchar(50) | aerolinea a cargo de los aereos         |
+| numero_vuelo     | varchar(20) | numero de vuelo     |
+| origen    | varchar(100) | oirigen de salida del vuelo|
+| destino    | varchar(100) | destino del vuelo|
+| hora_salida | datetime    | hora de salida del vuelo |
+| hora_llegada | datetime    |hora de llegada del vuelo |
 
 # Hoteles
 
 | Campo         | Tipo    | Descripción                            |
 | :------------ | :------ | :------------------------------------- |
-| id_hotel      | int(PK) | id que indentifica que hotel se reseva |
-| nombre        | varchar | nombre del hotel                       |
-| categoria     | varchar | categoria del hotel                    |
-| direccion     | varchar | direccion del hotel                    |
-| telefono      | int     | numero telefonico del hotel            |
-| fecha_entrada | date    | fecha de ingreso al hotel              |
-| fecha_salida  | date    | fecha de salida del hotel              |
+| id     | int(PK) | id que indentifica el hotel a reservar |
+| nombre        | varchar(100) | nombre del hotel|
+| direccion     | text | direccion del hotel|
+| ciudad    | varchar(100) | ciudad donde se encunetra el hotel|
+| pais     | varchar(100) | pais donde se encuentra el hotel|
+| categoria     | INT CHECK (categoria BETWEEN 1 AND 5) | categoria del hotel|
+| telefono      | varchar(20)   | numero telefonico del hotel|
+| email | varchar(100)    |   email del hotel   |
+| sitio_web  | varchar(200)    | sitio web del hotel |
+| descripcion  | text  | descripcion del hotel |
 
-# Aereos
 
-| Campo         | Tipo    | Descripción                             |
-| :------------ | :------ | :-------------------------------------- |
-| id_aereo      | int(PK) | id que indentifica la reserva de aereos |
-| aerolinea     | varchar | aerolinea a cargo de los aereos         |
-| num_vuelo     | varchar | codigo de que identifica los aereos     |
-| id_destino    | int(FK) | destino de los aereos                   |
-| precio        | decimal | valor de los aereos                     |
-| fecha_partida | date    | fecha de partida                        |
-| fecha_regreso | date    | fecha de regreso                        |
+# Pagos
+
+| Campo       | Tipo    | Descripción                                |
+| :---------- | :------ | :----------------------------------------- |
+| id    | int(PK) auto_increment | id del pago     |
+| reserva_id  | int(FK) | identifica que reserva se debe abonar      |
+| fecha_pago  | datetime | documenta en que fecha se realizo el pago  |
+| monto | decimal(10,2)| documenta el monto que se abono            |
+| metodo_pago | varchar(50) | describe que metodo de pago se utilizo |
+| estado_pago  | varchar(20) | describe en que estado se encuentra el pago (pagado o pendiente) |
+
+
