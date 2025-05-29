@@ -35,13 +35,13 @@ Actualmente, muchas personas desean viajar, pero se enfrentan a dificultades com
 
 | Campo      | Tipo     | Descripción                    |
 | :--------- | :------- | :----------------------------- |
-| id_cliente | int (PK) | numero de id del cliente       |
+| id         | int (PK) | numero de id del cliente       |
 | nombre     | varchar  | nombre del cliente             |
 | apellido   | varchar  | apellido del cliente           |
-| telefono   | int      | numero de telefono del cliente |
-| mail       | varchar  | mail del cliente               |
-| id_reserva | int      | numero de reserva del cliente  |
-| id_pago    | int      | numero de pago del cliente     |
+| email      | varchar  | mail del cliente               |
+| dni        | varchar  | documento identidad del cliente               |
+| nacionalidad | int      | nacionalidad de reserva del cliente  |
+| fecha_registro   |timestamp default current_timestamp    | fecha de registro del cliente     |
 
 # Reservas
 
@@ -70,8 +70,8 @@ Actualmente, muchas personas desean viajar, pero se enfrentan a dificultades com
 | Campo      | Tipo    | Descripción                 |
 | :--------- | :------ | :-------------------------- |
 | id_paquete | int(PK) | id del paquete seleccionado |
-| id_destino | int(FK) | id del destino              |
-| id_hotel   | int(FK) | id del hotel                |
+| nombre |varchar(100) not null | nombre del paquete             |
+| descripcion  | text | descripcion del hotel                |
 | id_aereo   | int(FK) | id de los aereos            |
 | precio     | decimal | precio del paquete          |
 
