@@ -68,7 +68,7 @@ Actualmente, muchas personas desean viajar, pero se enfrentan a dificultades com
 | precio     | decimal(10,2) not null| precio del paquete          |
 | fecha_inicio | date | fecha de inicio del paquete |
 | fecha_fin | date | fecha de finalizacion del paquete |
-| cupo_disponible | int | cupos disponiblers del paquete |
+| cupo_disponible | int | cupos disponibles del paquete |
 | hotel_id | int(FK) | hotel que incluye el paquete seleccionado |
 | vuelo_id | int(FK) | vuelo que incluye el paquete seleccionado |
 
