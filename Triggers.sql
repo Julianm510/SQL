@@ -12,7 +12,8 @@ END;//
 DELIMITER ;
 
 
--- Este trigger muestra los nuevos paquetes de viajes agregados en la carta de la agencia de viaje.
+-- Este trigger muestra los nuevos paquetes de viajes agregados en la carta de la agencia de viajes.
+
 DELIMITER //
 CREATE TRIGGER agregar_paquetes
 AFTER INSERT ON paquetes

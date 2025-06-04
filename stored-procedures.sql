@@ -1,4 +1,5 @@
--- procedimiento almacenado para obtener detalles de la reserva del cliente por ID
+-- Procedimiento almacenado para obtener detalles de la reserva del cliente por ID
+-- Interactuan con las tablas: Clientes, Reservas, Paquetes.
 
 DELIMITER //
 CREATE PROCEDURE obtener_reservas_por_cliente(IN clienteId INT)
@@ -12,7 +13,8 @@ DELIMITER ;
 
 CALL obtener_reservas_por_cliente(5)
 
--- procedimiento almacenado para actualizar la reserva de un cliente
+-- Procedimiento almacenado para actualizar la reserva de un cliente, por si el cliente quiere cambiar su destino o paquete.
+-- Interactua con las tablas: Clientes, Paquete, Reservas.
 
 DELIMITER //
 
@@ -51,3 +53,5 @@ CALL actualizar_reserva_cliente (5,2,@resultado);
 select @resultado;
 
 DROP PROCEDURE IF EXISTS actualizar_reserva_cliente ;
+
+SELECT * FROM VISTA_RESUMEN_RESERVAS;
