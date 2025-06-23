@@ -73,7 +73,7 @@ En resumen, esta base de datos constituye una solución robusta, escalable y bie
 
 - Diseñar y desarrollar una base de datos relacional para una agencia de viajes que permita gestionar de manera eficiente la información relacionada con los clientes, paquetes turísticos, reservas, pagos, vuelos, hoteles y empleados, facilitando la automatización y control de las operaciones comerciales y administrativas.
 
-## 🧾 Modelo de Negocios
+## Modelo de Negocios
 
 La agencia de viajes comercializa paquetes turísticos que combinan vuelos, alojamiento y actividades, actuando como intermediaria entre clientes y proveedores (aerolíneas, hoteles). Su principal fuente de ingresos proviene de la venta de paquetes y comisiones.
 
