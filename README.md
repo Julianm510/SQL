@@ -50,7 +50,7 @@
   - [fn_empleado_reservas](#nombre-de-la-funcion-fn_empleado_reservas)
   - [fn_cupos_ocupados_paquete](#nombre-de-la-funcion-fn_cupos_ocupados_paquete)
 
-- [Conclución](#Conclución)
+- [Conclusión](#Conclusión)
 
 ---
 
