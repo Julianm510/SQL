@@ -1,0 +1,9 @@
+Para instalar correctamente la base de datos Agencia_de_viajes se deberá seguir los siguientes pasos:
+
+1) Abrir "Create_talues" y ejecutar código.
+2) Abrir "Insert_Values" y ejecutar código.
+3) Abrir "Views" y ejecutar código.
+4) Abrir "Funciones" y ejecutar código.
+5) Abrir "Stored_procedures" y ejecutar código.
+6) Abrir "Triggers" y ejecutar código.
+
