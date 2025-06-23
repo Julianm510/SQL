@@ -76,17 +76,17 @@ En resumen, esta base de datos constituye una solución robusta, escalable y bie
 
 En el contexto actual del turismo, muchas agencias de viajes enfrentan dificultades para gestionar de manera eficiente la información relacionada con clientes, reservas, pagos, paquetes turísticos, vuelos y alojamientos. A medida que crece la demanda de servicios personalizados y se diversifican los destinos, se vuelve fundamental contar con sistemas que permitan organizar, consultar y actualizar datos de forma rápida, precisa y segura.
 
-La falta de una base de datos estructurada provoca una serie de problemas comunes:
+- La falta de una base de datos estructurada provoca una serie de problemas comunes:
 
-Duplicación de información, como clientes registrados más de una vez.
+- Duplicación de información, como clientes registrados más de una vez.
 
-Errores en la disponibilidad de paquetes, debido a la gestión manual del cupo.
+- Errores en la disponibilidad de paquetes, debido a la gestión manual del cupo.
 
-Pérdida de datos financieros, como pagos no registrados correctamente.
+- Pérdida de datos financieros, como pagos no registrados correctamente.
 
-Dificultades para realizar reportes sobre ventas, desempeño de empleados o ingresos mensuales.
+- Dificultades para realizar reportes sobre ventas, desempeño de empleados o ingresos mensuales.
 
-Falta de trazabilidad, al no poder identificar qué empleado gestionó una determinada reserva.
+- Falta de trazabilidad, al no poder identificar qué empleado gestionó una determinada reserva.
 
 Estos inconvenientes generan ineficiencias operativas, aumentan los tiempos de respuesta y pueden afectar directamente la calidad del servicio ofrecido al cliente. Además, limitan la capacidad de la empresa para tomar decisiones basadas en datos reales y actualizados.
 
