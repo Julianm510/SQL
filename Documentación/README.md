@@ -13,6 +13,7 @@
 
 - [Descripción del Proyecto](#descripción-del-proyecto)
 - [Objetivos](#objetivos)
+- [Modelo de Negocios](#modelo-de-negocios)
 - [Situación Problemática](#situación-problemática)
 - [Diagrama Entidad-Relación](#diagrama-entidad-relación)
 - [Descripción de Tablas](#descripción-de-tablas)
@@ -71,6 +72,20 @@ En resumen, esta base de datos constituye una solución robusta, escalable y bie
 ## Objetivos
 
 - Diseñar y desarrollar una base de datos relacional para una agencia de viajes que permita gestionar de manera eficiente la información relacionada con los clientes, paquetes turísticos, reservas, pagos, vuelos, hoteles y empleados, facilitando la automatización y control de las operaciones comerciales y administrativas.
+
+## 🧾 Modelo de Negocios
+
+La agencia de viajes comercializa paquetes turísticos que combinan vuelos, alojamiento y actividades, actuando como intermediaria entre clientes y proveedores (aerolíneas, hoteles). Su principal fuente de ingresos proviene de la venta de paquetes y comisiones.
+
+El modelo requiere una gestión eficiente de datos para:
+
+Controlar la disponibilidad de paquetes.
+
+Registrar reservas y pagos.
+
+Hacer seguimiento a clientes y empleados.
+
+Este proyecto propone una base de datos relacional que permite organizar toda la información crítica del negocio, automatizar tareas operativas y generar reportes para mejorar la toma de decisiones.
 
 ## Situación Problemática
 
