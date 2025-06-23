@@ -77,13 +77,13 @@ En resumen, esta base de datos constituye una solución robusta, escalable y bie
 
 La agencia de viajes comercializa paquetes turísticos que combinan vuelos, alojamiento y actividades, actuando como intermediaria entre clientes y proveedores (aerolíneas, hoteles). Su principal fuente de ingresos proviene de la venta de paquetes y comisiones.
 
-El modelo requiere una gestión eficiente de datos para:
+- El modelo requiere una gestión eficiente de datos para:
 
-Controlar la disponibilidad de paquetes.
+- Controlar la disponibilidad de paquetes.
 
-Registrar reservas y pagos.
+- Registrar reservas y pagos.
 
-Hacer seguimiento a clientes y empleados.
+- Hacer seguimiento a clientes y empleados.
 
 Este proyecto propone una base de datos relacional que permite organizar toda la información crítica del negocio, automatizar tareas operativas y generar reportes para mejorar la toma de decisiones.
 
