@@ -50,6 +50,8 @@
   - [fn_empleado_reservas](#nombre-de-la-funcion-fn_empleado_reservas)
   - [fn_cupos_ocupados_paquete](#nombre-de-la-funcion-fn_cupos_ocupados_paquete)
 
+- [Conclución](#Conclución)
+
 ---
 
 ## Descripción del Proyecto
@@ -277,3 +279,11 @@ Actualiza automáticamente el cupo del paquete al hacer una nueva reserva.
 
 **Descripción:** Muestra cuántos cupos de un paquete ya están ocupados.
 **Objetivo:** Controlar disponibilidad real.
+
+## ✅ Conclusión
+
+El desarrollo de este proyecto permitió diseñar e implementar una base de datos relacional sólida, escalable y eficiente para una agencia de viajes. A través de una estructura lógica bien definida, se logró centralizar la información crítica del negocio, abarcando desde la gestión de clientes, reservas, pagos y paquetes turísticos, hasta el control de vuelos, hoteles y empleados.
+
+El sistema facilita consultas clave para la toma de decisiones, mejora la trazabilidad de las operaciones internas y reduce significativamente los errores asociados al manejo manual de datos. Además, se incorporaron procedimientos almacenados, funciones y triggers que automatizan tareas recurrentes, aportando mayor eficiencia y seguridad a la gestión de datos.
+
+En conjunto, esta solución representa una herramienta fundamental para modernizar los procesos administrativos y comerciales de una agencia de viajes, sentando las bases para su integración con aplicaciones externas y futuros sistemas de gestión.
