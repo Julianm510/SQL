@@ -146,7 +146,7 @@ Paquetes
 
 # Nombre de la vista: vw_resumen_reservas
 
-# Descripción:
+## Descripción:
 
 esta vista fue diseñada para proporcionar una visión clara y simplificada de las reservas realizadas por los clientes. Muestra de forma directa la información básica de cada reserva, incluyendo el nombre del cliente, el paquete contratado, la fecha de la reserva, el número de personas incluidas, el monto total pagado y el estado actual de la reserva.
 
