@@ -77,7 +77,7 @@ Una base de datos bien diseñada soluciona estas deficiencias, optimizando proce
 
 ---
 
-## 🧩 Diagrama Entidad-Relación
+## Diagrama Entidad-Relación
 
 A continuación se muestra el modelo entidad-relación del proyecto, donde se representan las tablas principales de la base de datos y sus relaciones:
 
