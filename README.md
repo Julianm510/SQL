@@ -55,6 +55,8 @@ Estos inconvenientes generan ineficiencias operativas, aumentan los tiempos de r
 
 ### Tabla: Clientes
 
+**Descripción:** Almacena la información personal de los clientes que utilizan los servicios de la agencia, permitiendo identificar, contactar y registrar su historial de reservas.
+
 | Campo          | Tipo   | Descripción                    |
 | -------------- | ------ | ------------------------------ |
 | id             | número | Número de ID del cliente       |
@@ -65,7 +67,11 @@ Estos inconvenientes generan ineficiencias operativas, aumentan los tiempos de r
 | fecha_registro | fecha  | Fecha de registro del cliente  |
 | nacionalidad   | número | Nacionalidad del cliente       |
 
+---
+
 ### Tabla: Reservas
+
+**Descripción:** Registra las reservas realizadas por los clientes sobre paquetes turísticos, incluyendo cantidad de personas, monto total y estado de la reserva.
 
 | Campo         | Tipo   | Descripción                           |
 | ------------- | ------ | ------------------------------------- |
@@ -77,7 +83,11 @@ Estos inconvenientes generan ineficiencias operativas, aumentan los tiempos de r
 | num_personas  | número | Número de personas incluidas          |
 | monto_total   | número | Costo total de la reserva             |
 
-### Paquetes
+---
+
+### Tabla: Paquetes
+
+**Descripción:** Define los paquetes turísticos que la agencia ofrece, integrando vuelos y hoteles, junto con su duración, destino, precio y cupo disponible.
 
 | Campo           | Tipo   | Descripción             |
 | --------------- | ------ | ----------------------- |
@@ -92,7 +102,11 @@ Estos inconvenientes generan ineficiencias operativas, aumentan los tiempos de r
 | hotel_id        | número | ID del hotel incluido   |
 | vuelo_id        | número | ID del vuelo incluido   |
 
+---
+
 ### Tabla: Vuelos
+
+**Descripción:** Guarda los datos de los vuelos disponibles que pueden formar parte de un paquete, incluyendo su horario y ruta.
 
 | Campo        | Tipo   | Descripción           |
 | ------------ | ------ | --------------------- |
@@ -104,22 +118,30 @@ Estos inconvenientes generan ineficiencias operativas, aumentan los tiempos de r
 | hora_salida  | fecha  | Hora de salida        |
 | hora_llegada | fecha  | Hora de llegada       |
 
+---
+
 ### Tabla: Hoteles
 
-| Campo       | Tipo   | Descripción                  |
-| ----------- | ------ | ---------------------------- |
-| id          | número | ID del hotel                 |
-| nombre      | texto  | Nombre del hotel             |
-| direccion   | texto  | Dirección del hotel          |
-| ciudad      | texto  | Ciudad del hotel             |
-| pais        | texto  | País del hotel               |
-| categoria   | número | Categoría del hotel          |
-| telefono    | texto  | Teléfono del hotel           |
-| email       | texto  | Correo electrónico del hotel |
-| sitio_web   | texto  | Sitio web del hotel          |
-| descripcion | texto  | Descripción del hotel        |
+**Descripción:** Contiene los datos de los hoteles disponibles para ser incluidos en paquetes, como su ubicación, categoría y medios de contacto.
+
+| Campo       | Tipo   | Descripción                     |
+| ----------- | ------ | ------------------------------- |
+| id          | número | ID del hotel                    |
+| nombre      | texto  | Nombre del hotel                |
+| direccion   | texto  | Dirección del hotel             |
+| ciudad      | texto  | Ciudad del hotel                |
+| pais        | texto  | País del hotel                  |
+| categoria   | número | Categoría del hotel (estrellas) |
+| telefono    | texto  | Teléfono del hotel              |
+| email       | texto  | Correo electrónico del hotel    |
+| sitio_web   | texto  | Sitio web del hotel             |
+| descripcion | texto  | Descripción del hotel           |
+
+---
 
 ### Tabla: Pagos
+
+**Descripción:** Registra los pagos asociados a reservas, detallando el monto, método y estado del pago (por ejemplo, pagado o pendiente).
 
 | Campo       | Tipo   | Descripción                          |
 | ----------- | ------ | ------------------------------------ |
@@ -130,7 +152,11 @@ Estos inconvenientes generan ineficiencias operativas, aumentan los tiempos de r
 | metodo_pago | texto  | Método de pago utilizado             |
 | estado_pago | texto  | Estado del pago (pagado o pendiente) |
 
+---
+
 ### Tabla: Empleado
+
+**Descripción:** Almacena la información del personal de la agencia que gestiona las reservas, útil para el control interno y análisis de desempeño.
 
 | Campo              | Tipo   | Descripción           |
 | ------------------ | ------ | --------------------- |
