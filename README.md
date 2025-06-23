@@ -10,6 +10,10 @@
 
 - Descripción de tablas.
 
+- Vistas.
+
+- Triggers.
+
 ## Descripción del Proyecto
 
 El presente proyecto tiene como objetivo el diseño y desarrollo de una base de datos relacional para una agencia de viajes, con el fin de organizar, centralizar y automatizar el manejo de información relacionada con sus principales operaciones: la gestión de clientes, reservas, pagos, paquetes turísticos, vuelos, hoteles y empleados.
