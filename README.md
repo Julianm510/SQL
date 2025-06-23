@@ -54,26 +54,41 @@
 
 ## Descripción del Proyecto
 
-Este proyecto tiene como objetivo el diseño y desarrollo de una base de datos relacional para una agencia de viajes. Permite organizar, centralizar y automatizar la información de clientes, reservas, pagos, paquetes turísticos, vuelos, hoteles y empleados.
+El presente proyecto tiene como objetivo el diseño y desarrollo de una base de datos relacional para una agencia de viajes, con el fin de organizar, centralizar y automatizar el manejo de información relacionada con sus principales operaciones: la gestión de clientes, reservas, pagos, paquetes turísticos, vuelos, hoteles y empleados.
 
-Facilita el control operativo, mejora la atención al cliente y permite consultas como reservas activas, ingresos generados, o disponibilidad de paquetes. Está preparado para integrarse a plataformas web o interfaces gráficas.
+En el contexto actual, las agencias de viajes requieren sistemas eficientes que les permitan mantener un control detallado y actualizado sobre sus operaciones, mejorar la atención al cliente y facilitar la toma de decisiones comerciales. La base de datos propuesta busca resolver estas necesidades mediante una estructura lógica, coherente y normalizada que represente las entidades clave del negocio y sus relaciones.
+
+Entre los elementos principales se encuentra la gestión de clientes, permitiendo registrar y consultar su información personal y contacto. A su vez, se contemplan paquetes turísticos que agrupan vuelos y hoteles disponibles, definidos por fechas, precios y cupos. Los vuelos y hoteles son gestionados como entidades independientes, lo que permite su reutilización y actualización eficiente.
+
+Las reservas representan las solicitudes de los clientes sobre paquetes específicos, y están directamente relacionadas con los pagos efectuados, los cuales se registran con sus métodos y estados. Además, se incluye la tabla de empleados, para llevar un control del personal que gestiona las reservas, lo que aporta trazabilidad interna y mejora la organización del trabajo.
+
+Este sistema de base de datos permite generar consultas útiles como: reservas activas por cliente, ingresos generados, métodos de pago más utilizados, o disponibilidad de paquetes. También está diseñado para facilitar su integración futura con interfaces gráficas, plataformas web o sistemas externos de reservas.
+
+En resumen, esta base de datos constituye una solución robusta, escalable y bien estructurada para la gestión integral de una agencia de viajes, mejorando la eficiencia operativa y la calidad del servicio al cliente.
 
 ## Objetivos
 
-- Diseñar una base de datos relacional que gestione eficientemente clientes, paquetes, reservas, pagos, vuelos, hoteles y empleados.
-- Automatizar y controlar las operaciones comerciales y administrativas.
+- Diseñar y desarrollar una base de datos relacional para una agencia de viajes que permita gestionar de manera eficiente la información relacionada con los clientes, paquetes turísticos, reservas, pagos, vuelos, hoteles y empleados, facilitando la automatización y control de las operaciones comerciales y administrativas.
 
 ## Situación Problemática
 
-Muchas agencias presentan dificultades en la gestión de información por falta de una estructura adecuada. Esto genera:
+En el contexto actual del turismo, muchas agencias de viajes enfrentan dificultades para gestionar de manera eficiente la información relacionada con clientes, reservas, pagos, paquetes turísticos, vuelos y alojamientos. A medida que crece la demanda de servicios personalizados y se diversifican los destinos, se vuelve fundamental contar con sistemas que permitan organizar, consultar y actualizar datos de forma rápida, precisa y segura.
 
-- Duplicación de datos
-- Errores en disponibilidad
-- Pérdida de datos financieros
-- Dificultades en reportes
-- Falta de trazabilidad
+La falta de una base de datos estructurada provoca una serie de problemas comunes:
 
-Una base de datos bien diseñada soluciona estas deficiencias, optimizando procesos y mejorando la toma de decisiones.
+Duplicación de información, como clientes registrados más de una vez.
+
+Errores en la disponibilidad de paquetes, debido a la gestión manual del cupo.
+
+Pérdida de datos financieros, como pagos no registrados correctamente.
+
+Dificultades para realizar reportes sobre ventas, desempeño de empleados o ingresos mensuales.
+
+Falta de trazabilidad, al no poder identificar qué empleado gestionó una determinada reserva.
+
+Estos inconvenientes generan ineficiencias operativas, aumentan los tiempos de respuesta y pueden afectar directamente la calidad del servicio ofrecido al cliente. Además, limitan la capacidad de la empresa para tomar decisiones basadas en datos reales y actualizados.
+
+Frente a este panorama, surge la necesidad de desarrollar una base de datos relacional que permita a la agencia automatizar sus procesos clave, garantizar la integridad de los datos, y facilitar consultas y reportes para mejorar la toma de decisiones.
 
 ---
 
