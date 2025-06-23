@@ -121,3 +121,14 @@ INSERT INTO pagos (reserva_id, fecha_pago, monto, metodo_pago, estado_pago) VALU
 (18, '2025-05-28', 1450.00, 'Tarjeta', 'completado'),
 (19, '2025-05-29', 1450.00, 'Transferencia', 'pendiente'),
 (20, '2025-05-30', 650.00, 'Efectivo', 'completado');
+
+INSERT INTO empleado (nombre, apellido, email, telefono, puesto, fecha_contratacion, salario) VALUES ('Toni', 'Benet', 'eusebio47@serrano-zamora.com', '+34 710 565 149', 'Vendedor', '2022-10-26', 171723.93);
+INSERT INTO empleado (nombre, apellido, email, telefono, puesto, fecha_contratacion, salario) VALUES ('Paco', 'Bauzà', 'heraclio54@portero.es', '+34744 415 875', 'Vendedor', '2021-06-12', 157015.15);
+INSERT INTO empleado (nombre, apellido, email, telefono, puesto, fecha_contratacion, salario) VALUES ('Francisco', 'Luque', 'augustomartinez@ordonez.org', '+34719346630', 'Vendedor', '2023-04-08', 168087.56);
+INSERT INTO empleado (nombre, apellido, email, telefono, puesto, fecha_contratacion, salario) VALUES ('Valentín', 'Azcona', 'rurrutia@vara.org', '+34 743771353', 'Vendedor', '2023-09-21', 187595.0);
+INSERT INTO empleado (nombre, apellido, email, telefono, puesto, fecha_contratacion, salario) VALUES ('Rosalva', 'Abella', 'remigiocarreno@mosquera.com', '+34732093255', 'Atención al Cliente', '2023-11-01', 129829.59);
+INSERT INTO empleado (nombre, apellido, email, telefono, puesto, fecha_contratacion, salario) VALUES ('Emelina', 'Ferrera', 'ealmazan@oliveras.com', '+34718944328', 'Gerente de Reservas', '2023-07-01', 158326.06);
+INSERT INTO empleado (nombre, apellido, email, telefono, puesto, fecha_contratacion, salario) VALUES ('Judith', 'Quintero', 'julianavaldes@exposito.es', '+34886512275', 'Vendedor', '2023-06-03', 121658.41);
+INSERT INTO empleado (nombre, apellido, email, telefono, puesto, fecha_contratacion, salario) VALUES ('Candelario', 'Oliva', 'cintiaalbero@yahoo.com', '+34 708 989 914', 'Gerente de Reservas', '2020-08-31', 160611.26);
+INSERT INTO empleado (nombre, apellido, email, telefono, puesto, fecha_contratacion, salario) VALUES ('Carmina', 'Varela', 'muronuria@gmail.com', '+34703718165', 'Atención al Cliente', '2021-04-01', 145974.21);
+INSERT INTO empleado (nombre, apellido, email, telefono, puesto, fecha_contratacion, salario) VALUES ('José', 'Barral', 'eliseo79@lillo-canales.com', '+34701 284 893', 'Atención al Cliente', '2022-11-07', 155448.96);

@@ -67,6 +67,21 @@ CREATE TABLE reservas (
     FOREIGN KEY (paquete_id) REFERENCES paquetes(id)
 );
 
+ALTER TABLE reservas
+ADD COLUMN empleado_id INT,
+ADD FOREIGN KEY (empleado_id) REFERENCES empleado(id);
+
+CREATE TABLE empleado (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    apellido VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    telefono VARCHAR(20),
+    puesto VARCHAR(50), -- Ej: vendedor, administrativo
+    fecha_contratacion DATE,
+    salario DECIMAL(10,2)
+);
+
 CREATE TABLE pagos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     reserva_id INT NOT NULL,
@@ -76,3 +91,21 @@ CREATE TABLE pagos (
     estado_pago VARCHAR(20) DEFAULT 'pendiente',
     FOREIGN KEY (reserva_id) REFERENCES reservas(id)
 );
+
+
+CREATE TABLE nuevos_paquetes (  id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    destino VARCHAR(100),
+    precio DECIMAL(10,2) NOT NULL,
+    fecha_inicio DATE,
+    fecha_fin DATE,
+    cupo_disponible INT,
+    hotel_id INT,
+    vuelo_id INT,
+    FOREIGN KEY (hotel_id) REFERENCES hoteles(id),
+    FOREIGN KEY (vuelo_id) REFERENCES vuelos(id)
+    );
+    
+     select * from empleado;
+

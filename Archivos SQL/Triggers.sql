@@ -1,7 +1,31 @@
--- Este trigger actualiza los cupos de los respectivos paquetes que se van reservando a medida del tiempo.
+ DELIMITER //
+
+CREATE TRIGGER trg_insert_reservas
+BEFORE INSERT ON reservas
+FOR EACH ROW
+BEGIN
+   
+    IF NEW.monto_total IS NULL THEN
+        SET NEW.monto_total = 0;
+    END IF;
+
+  
+    IF NEW.estado IS NULL THEN
+        SET NEW.estado = 'pendiente';
+    END IF;
+
+ 
+    IF NEW.fecha_reserva IS NULL THEN
+        SET NEW.fecha_reserva = NOW();
+    END IF;
+END;
+//
+
+DELIMITER ;
+
 
 DELIMITER //
-CREATE TRIGGER actualizar_cupo_paquete
+CREATE TRIGGER trg_actualizar_cupo_paquete
 AFTER INSERT ON reservas
 FOR EACH ROW
 BEGIN
@@ -12,10 +36,9 @@ END;//
 DELIMITER ;
 
 
--- Este trigger muestra los nuevos paquetes de viajes agregados en la carta de la agencia de viajes.
 
 DELIMITER //
-CREATE TRIGGER agregar_paquetes
+CREATE TRIGGER trg_agregar_paquetes
 AFTER INSERT ON paquetes
 FOR EACH ROW
 BEGIN 
@@ -24,6 +47,6 @@ INSERT INTO nuevos_paquetes (id, nombre, descripcion, destino, precio, fecha_ini
  END; //
  DELIMITER ; 
  
- 
+
 
 
