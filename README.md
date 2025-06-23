@@ -36,11 +36,11 @@ En resumen, esta base de datos constituye una solución robusta, escalable y bie
 
 Actualmente, muchas personas desean viajar, pero se enfrentan a dificultades como la falta de información confiable, precios elevados y experiencias poco personalizadas. Además, la saturación de ofertas en línea puede generar desconfianza e indecisión. Ante esta situación, surge la necesidad de una agencia de viajes que no solo facilite la planificación de viajes, sino que también ofrezca un servicio cercano, seguro y adaptado a las necesidades del cliente. Este proyecto responde a esa necesidad mediante la creación de una agencia que se enfoque en el diseño de experiencias únicas, accesibles y bien organizadas.
 
-## Descripción de tablas.
+#Descripción de tablas.
 
 # Tabla: Clientes
 
-# Descripción: Almacena la información de los clientes que utilizan los servicios de la agencia.
+## Descripción: Almacena la información de los clientes que utilizan los servicios de la agencia.
 
 | Campo          | Tipo    | Descripción                         |
 | :------------- | :------ | :---------------------------------- |
@@ -54,7 +54,7 @@ Actualmente, muchas personas desean viajar, pero se enfrentan a dificultades com
 
 # Tabla: Reservas
 
-# Descripción: Registra las reservas que los clientes hacen sobre los paquetes turísticos.
+## Descripción: Registra las reservas que los clientes hacen sobre los paquetes turísticos.
 
 | Campo         | Tipo   | Descripción                               |
 | :------------ | :----- | :---------------------------------------- |
@@ -83,7 +83,7 @@ Paquetes
 
 # Tabla: Vuelos
 
-# Descripción: Guarda los vuelos disponibles que pueden formar parte de un paquete turístico.
+## Descripción: Guarda los vuelos disponibles que pueden formar parte de un paquete turístico.
 
 | Campo        | Tipo   | Descripción                             |
 | :----------- | :----- | :-------------------------------------- |
@@ -97,7 +97,7 @@ Paquetes
 
 # Tabla: Hoteles
 
-# Descripción: Almacena la información de hoteles disponibles para incluir en los paquetes.
+## Descripción: Almacena la información de hoteles disponibles para incluir en los paquetes.
 
 | Campo       | Tipo   | Descripción                            |
 | :---------- | :----- | :------------------------------------- |
@@ -114,7 +114,7 @@ Paquetes
 
 # Tabla: Pagos
 
-# Descripción: Almacena los pagos realizados por las reservas.
+## Descripción: Almacena los pagos realizados por las reservas.
 
 | Campo       | Tipo   | Descripción                                                      |
 | :---------- | :----- | :--------------------------------------------------------------- |
@@ -127,7 +127,7 @@ Paquetes
 
 # Tabla: Empleado
 
-# Descripción: Almacena la información del personal de la agencia que gestiona las reservas.
+## Descripción: Almacena la información del personal de la agencia que gestiona las reservas.
 
 | Campo              | Tipo   | Descripción                                           |
 | :----------------- | :----- | :---------------------------------------------------- |
@@ -146,19 +146,27 @@ Paquetes
 
 # Nombre de la vista: vw_resumen_reservas
 
-# Descripción: esta vista fue diseñada para proporcionar una visión clara y simplificada de las reservas realizadas por los clientes. Muestra de forma directa la información básica de cada reserva, incluyendo el nombre del cliente, el paquete contratado, la fecha de la reserva, el número de personas incluidas, el monto total pagado y el estado actual de la reserva.
+# Descripción:
+
+esta vista fue diseñada para proporcionar una visión clara y simplificada de las reservas realizadas por los clientes. Muestra de forma directa la información básica de cada reserva, incluyendo el nombre del cliente, el paquete contratado, la fecha de la reserva, el número de personas incluidas, el monto total pagado y el estado actual de la reserva.
 
 # Nombre de la vista: vw_paquetes_populares
 
-# Descripción: esta vista permite identificar cuáles son los paquetes turísticos más reservados por los clientes. Presenta un resumen ordenado de los paquetes junto con el número total de reservas asociadas a cada uno, proporcionando una herramienta clave para el análisis comercial y la toma de decisiones estratégicas.
+# Descripción:
+
+esta vista permite identificar cuáles son los paquetes turísticos más reservados por los clientes. Presenta un resumen ordenado de los paquetes junto con el número total de reservas asociadas a cada uno, proporcionando una herramienta clave para el análisis comercial y la toma de decisiones estratégicas.
 
 # Nombre de la vista: vw_pagos_cliente
 
-# Descripción: esta vista tiene como finalidad resumir la información financiera de cada cliente en relación con los pagos realizados por sus reservas. Permite identificar cuántos pagos ha efectuado un cliente y cuál es el monto total que ha abonado, facilitando el análisis financiero y el seguimiento de comportamiento de compra.
+# Descripción:
+
+esta vista tiene como finalidad resumir la información financiera de cada cliente en relación con los pagos realizados por sus reservas. Permite identificar cuántos pagos ha efectuado un cliente y cuál es el monto total que ha abonado, facilitando el análisis financiero y el seguimiento de comportamiento de compra.
 
 # Nombre de la vista: vw_ingresos_empleado
 
-# Descripción: esta vista está diseñada para ofrecer un resumen del desempeño económico de cada empleado de la agencia de viajes. Muestra cuántas reservas ha gestionado cada empleado y cuál es el ingreso total generado por esas reservas. Esta vista es especialmente útil para evaluar la productividad del personal y tomar decisiones administrativas o de incentivos.
+# Descripción:
+
+esta vista está diseñada para ofrecer un resumen del desempeño económico de cada empleado de la agencia de viajes. Muestra cuántas reservas ha gestionado cada empleado y cuál es el ingreso total generado por esas reservas. Esta vista es especialmente útil para evaluar la productividad del personal y tomar decisiones administrativas o de incentivos.
 
 # Triggers:
 
@@ -166,12 +174,18 @@ Paquetes
 
 # Nombre del trigger: trg_insert_reservas
 
-# Descripción: Este trigger se activa antes de insertar un nuevo registro en la tabla reservas. Su propósito es asegurar que ciertos campos críticos tengan valores válidos, incluso si no fueron proporcionados explícitamente al momento de realizar la inserción.
+# Descripción:
+
+Este trigger se activa antes de insertar un nuevo registro en la tabla reservas. Su propósito es asegurar que ciertos campos críticos tengan valores válidos, incluso si no fueron proporcionados explícitamente al momento de realizar la inserción.
 
 # Nombre del trigger: trg_agregar_paquetes
 
-# Descripción: Este trigger tiene como finalidad replicar automáticamente los datos insertados en la tabla paquetes hacia otra tabla llamada nuevos_paquetes. Funciona como una copia de seguridad, auditoría o registro histórico de los paquetes turísticos agregados.
+# Descripción:
+
+Este trigger tiene como finalidad replicar automáticamente los datos insertados en la tabla paquetes hacia otra tabla llamada nuevos_paquetes. Funciona como una copia de seguridad, auditoría o registro histórico de los paquetes turísticos agregados.
 
 # Nombre del trigger: trg_actualizar_cupo_paquete
 
-# Descripción: El propósito de este trigger es actualizar automáticamente el cupo disponible de un paquete turístico cuando se realiza una nueva reserva. De esta forma, el sistema controla en tiempo real la disponibilidad de lugares para cada paquete.
+# Descripción:
+
+El propósito de este trigger es actualizar automáticamente el cupo disponible de un paquete turístico cuando se realiza una nueva reserva. De esta forma, el sistema controla en tiempo real la disponibilidad de lugares para cada paquete.
