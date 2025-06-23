@@ -98,7 +98,7 @@ Frente a este panorama, surge la necesidad de desarrollar una base de datos rela
 
 A continuación se muestra el modelo entidad-relación del proyecto, donde se representan las tablas principales de la base de datos y sus relaciones:
 
-![Diagrama Entidad-Relación](https://github.com/Julianm510/SQL/blob/main/DER.png?raw=true)
+![Diagrama Entidad-Relación](https://github.com/Julianm510/SQL/blob/main/Documentaci%C3%B3n/DER.png)
 
 ---
 
