@@ -1,10 +1,20 @@
 # PROYECTO AGENCIA DE VIAJES
 
+# 📘 PROYECTO FINAL SQL
+
+**Profesor:** Camilo Andrés Redondo  
+**Alumno:** Julián Muriel  
+**Comisión:** #75950  
+**Año:** 2025
+
+---
+
 ## 📂 Índice
 
 - [Descripción del Proyecto](#descripción-del-proyecto)
 - [Objetivos](#objetivos)
 - [Situación Problemática](#situación-problemática)
+- [Diagrama Entidad-Relación](#diagrama-entidad-relación)
 - [Descripción de Tablas](#descripción-de-tablas)
 
   - [Clientes](#tabla-clientes)
@@ -64,6 +74,14 @@ Muchas agencias presentan dificultades en la gestión de información por falta 
 - Falta de trazabilidad
 
 Una base de datos bien diseñada soluciona estas deficiencias, optimizando procesos y mejorando la toma de decisiones.
+
+---
+
+## 🧩 Diagrama Entidad-Relación
+
+A continuación se muestra el modelo entidad-relación del proyecto, donde se representan las tablas principales de la base de datos y sus relaciones:
+
+![Diagrama Entidad-Relación](./bbedbc5e-c4ca-48af-baec-458601777442.png)
 
 ---
 
