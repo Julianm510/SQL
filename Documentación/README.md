@@ -225,39 +225,55 @@ A continuación se muestra el modelo entidad-relación del proyecto, donde se re
 
 ---
 
-## Vistas
+# Vistas:
 
-### Nombre de la vista: vw_resumen_reservas
+# En esta sección se detallan las vistas creadas en el proyecto junto con su descripción.
 
-Muestra datos resumidos de las reservas realizadas por los clientes.
+# Nombre de la vista: vw_resumen_reservas
 
-### Nombre de la vista: vw_paquetes_populares
+# Descripción:
 
-Lista los paquetes más reservados y la cantidad de reservas de cada uno.
+esta vista fue diseñada para proporcionar una visión clara y simplificada de las reservas realizadas por los clientes. Muestra de forma directa la información básica de cada reserva, incluyendo el nombre del cliente, el paquete contratado, la fecha de la reserva, el número de personas incluidas, el monto total pagado y el estado actual de la reserva.
 
-### Nombre de la vista: vw_pagos_cliente
+# Nombre de la vista: vw_paquetes_populares
 
-Resume cuántos pagos hizo un cliente y el total abonado.
+# Descripción:
 
-### Nombre de la vista: vw_ingresos_empleado
+esta vista permite identificar cuáles son los paquetes turísticos más reservados por los clientes. Presenta un resumen ordenado de los paquetes junto con el número total de reservas asociadas a cada uno, proporcionando una herramienta clave para el análisis comercial y la toma de decisiones estratégicas.
 
-Indica cuántas reservas gestionó un empleado y los ingresos generados.
+# Nombre de la vista: vw_pagos_cliente
 
----
+# Descripción:
 
-## Triggers
+esta vista tiene como finalidad resumir la información financiera de cada cliente en relación con los pagos realizados por sus reservas. Permite identificar cuántos pagos ha efectuado un cliente y cuál es el monto total que ha abonado, facilitando el análisis financiero y el seguimiento de comportamiento de compra.
 
-### Nombre del trigger: trg_insert_reservas
+# Nombre de la vista: vw_ingresos_empleado
 
-Se activa antes de insertar una reserva. Valida datos antes del registro.
+# Descripción:
 
-### Nombre del trigger: trg_agregar_paquetes
+esta vista está diseñada para ofrecer un resumen del desempeño económico de cada empleado de la agencia de viajes. Muestra cuántas reservas ha gestionado cada empleado y cuál es el ingreso total generado por esas reservas. Esta vista es especialmente útil para evaluar la productividad del personal y tomar decisiones administrativas o de incentivos.
 
-Copia los nuevos paquetes a una tabla de auditoría `nuevos_paquetes`.
+# Triggers:
 
-### Nombre del trigger: trg_actualizar_cupo_paquete
+# En esta sección se detallan los triggers creados en el proyecto junto con su descripción.
 
-Actualiza automáticamente el cupo del paquete al hacer una nueva reserva.
+# Nombre del trigger: trg_insert_reservas
+
+# Descripción:
+
+Este trigger se activa antes de insertar un nuevo registro en la tabla reservas. Su propósito es asegurar que ciertos campos críticos tengan valores válidos, incluso si no fueron proporcionados explícitamente al momento de realizar la inserción.
+
+# Nombre del trigger: trg_agregar_paquetes
+
+# Descripción:
+
+Este trigger tiene como finalidad replicar automáticamente los datos insertados en la tabla paquetes hacia otra tabla llamada nuevos_paquetes. Funciona como una copia de seguridad, auditoría o registro histórico de los paquetes turísticos agregados.
+
+# Nombre del trigger: trg_actualizar_cupo_paquete
+
+# Descripción:
+
+El propósito de este trigger es actualizar automáticamente el cupo disponible de un paquete turístico cuando se realiza una nueva reserva. De esta forma, el sistema controla en tiempo real la disponibilidad de lugares para cada paquete.
 
 ---
 
