@@ -253,25 +253,24 @@ esta vista tiene como finalidad resumir la información financiera de cada clien
 
 esta vista está diseñada para ofrecer un resumen del desempeño económico de cada empleado de la agencia de viajes. Muestra cuántas reservas ha gestionado cada empleado y cuál es el ingreso total generado por esas reservas. Esta vista es especialmente útil para evaluar la productividad del personal y tomar decisiones administrativas o de incentivos.
 
-# Triggers:
+## Triggers:
 
 # En esta sección se detallan los triggers creados en el proyecto junto con su descripción.
 
-# Nombre del trigger: trg_insert_reservas
+### Nombre del trigger: trg_insert_reservas
 
-# Descripción:
-
+**Descripción:**
 Este trigger se activa antes de insertar un nuevo registro en la tabla reservas. Su propósito es asegurar que ciertos campos críticos tengan valores válidos, incluso si no fueron proporcionados explícitamente al momento de realizar la inserción.
 
-# Nombre del trigger: trg_agregar_paquetes
+### Nombre del trigger: trg_agregar_paquetes
 
-# Descripción:
+**Descripción:**
 
 Este trigger tiene como finalidad replicar automáticamente los datos insertados en la tabla paquetes hacia otra tabla llamada nuevos_paquetes. Funciona como una copia de seguridad, auditoría o registro histórico de los paquetes turísticos agregados.
 
-# Nombre del trigger: trg_actualizar_cupo_paquete
+### Nombre del trigger: trg_actualizar_cupo_paquete
 
-# Descripción:
+**Descripción:**
 
 El propósito de este trigger es actualizar automáticamente el cupo disponible de un paquete turístico cuando se realiza una nueva reserva. De esta forma, el sistema controla en tiempo real la disponibilidad de lugares para cada paquete.
 
