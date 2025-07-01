@@ -225,37 +225,37 @@ A continuación se muestra el modelo entidad-relación del proyecto, donde se re
 
 ---
 
-# Vistas:
+## Vistas:
 
-# En esta sección se detallan las vistas creadas en el proyecto junto con su descripción.
+**En esta sección se detallan las vistas creadas en el proyecto junto con su descripción.**
 
-# Nombre de la vista: vw_resumen_reservas
+### Nombre de la vista: vw_resumen_reservas
 
-# Descripción:
+**Descripción:**
 
 esta vista fue diseñada para proporcionar una visión clara y simplificada de las reservas realizadas por los clientes. Muestra de forma directa la información básica de cada reserva, incluyendo el nombre del cliente, el paquete contratado, la fecha de la reserva, el número de personas incluidas, el monto total pagado y el estado actual de la reserva.
 
-# Nombre de la vista: vw_paquetes_populares
+### Nombre de la vista: vw_paquetes_populares
 
-# Descripción:
+**Descripción:**
 
 esta vista permite identificar cuáles son los paquetes turísticos más reservados por los clientes. Presenta un resumen ordenado de los paquetes junto con el número total de reservas asociadas a cada uno, proporcionando una herramienta clave para el análisis comercial y la toma de decisiones estratégicas.
 
-# Nombre de la vista: vw_pagos_cliente
+### Nombre de la vista: vw_pagos_cliente
 
-# Descripción:
+**Descripción:**
 
 esta vista tiene como finalidad resumir la información financiera de cada cliente en relación con los pagos realizados por sus reservas. Permite identificar cuántos pagos ha efectuado un cliente y cuál es el monto total que ha abonado, facilitando el análisis financiero y el seguimiento de comportamiento de compra.
 
-# Nombre de la vista: vw_ingresos_empleado
+### Nombre de la vista: vw_ingresos_empleado
 
-# Descripción:
+**Descripción:**
 
 esta vista está diseñada para ofrecer un resumen del desempeño económico de cada empleado de la agencia de viajes. Muestra cuántas reservas ha gestionado cada empleado y cuál es el ingreso total generado por esas reservas. Esta vista es especialmente útil para evaluar la productividad del personal y tomar decisiones administrativas o de incentivos.
 
 ## Triggers:
 
-# En esta sección se detallan los triggers creados en el proyecto junto con su descripción.
+**En esta sección se detallan los triggers creados en el proyecto junto con su descripción.**
 
 ### Nombre del trigger: trg_insert_reservas
 
